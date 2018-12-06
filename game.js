@@ -7,7 +7,6 @@ var game = {
   turn: 0,
   nextTurn: function () {
     this.turn = this.turn + 1;
-    console.log('Starting turn ' + this.turn);
   }
 };
 var ko = [
@@ -105,8 +104,7 @@ function checkVicinity (mode, ogX, ogY) {
   
   for (var i = 0; i < vicinity.length; i = i + mode ) {
     var elementId = '#' + convertToId(vicinity[i].x, vicinity[i].y);
-    console.log('ID ' + elementId + ' has data: ' + $( elementId ).attr('data-iece'));
-    console.log($( elementId ));
+
     if ($( elementId ).attr('data-piece') == null) {
       $( elementId ).addClass('ploppable');
       var currPieceId = '#' + convertToId(ogX, ogY);
@@ -115,7 +113,6 @@ function checkVicinity (mode, ogX, ogY) {
   }
 }
 function movePiece(tile, piece, og) {
-  console.log('tile: ' + tile + ' piece: ' + piece + ' og: ' + og);
   // first, remove the og data-piece;
   $( og ).removeAttr('data-piece');
   // then move the piece to the clicked on tile
@@ -127,6 +124,8 @@ function movePiece(tile, piece, og) {
     oya.x = tileCoor.x;
     oya.y = tileCoor.y;
   }
+  
+  // if oya is the one being moved, check around it for ko pieces to take out right at this moment
   
   game.nextTurn();
   clearBoard();
