@@ -106,7 +106,7 @@ section .f2-2 {
   margin-right: 36px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
@@ -121,6 +121,9 @@ h2 {
 }
 h3 {
   font-size: 24px;
+}
+h4 {
+  font-size: 18px;
 }
 section p {
   margin-bottom: 36px;

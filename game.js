@@ -155,6 +155,8 @@ function populateBoard () {
     $( elementId ).attr('data-piece-type', 'ko');
     if ((game.turn % 2) != 0) {
       $( elementId ).attr('onClick', 'icon(this.id)');
+      $( '#oya-turn' ).fadeTo(120, 0.0);
+      $( '#ko-turn' ).fadeTo(120, 1.0);
     }
   }
   elementId = '#' + convertToId(oya.x, oya.y);
@@ -162,6 +164,8 @@ function populateBoard () {
   $( elementId ).attr('data-piece', 'oya');
   if ((game.turn % 2) === 0) {
     $( elementId ).attr('onClick', 'icon(this.id)');
+    $( '#oya-turn' ).fadeTo(120, 1.0);
+    $( '#ko-turn' ).fadeTo(120, 0.0);
   }
 }
 

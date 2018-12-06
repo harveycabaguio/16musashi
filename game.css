@@ -120,3 +120,20 @@
 [data-piece="13"].ko:after { background-image: url('assets/ten/13.jpg');}
 [data-piece="14"].ko:after { background-image: url('assets/ten/14.jpg');}
 [data-piece="15"].ko:after { background-image: url('assets/ten/15.jpg');}
+
+#ko-turn,
+#oya-turn {
+  display: inline-block;
+  padding: 6px 12px;
+  
+  color: white;
+  
+  border-radius: 3px;
+  opacity: 0;
+}
+#ko-turn {
+  background-color: #666;
+}
+#oya-turn {
+  background-color: #dc322f;
+}
