@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>16武蔵</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Comfortaa:300,400,700|Kosugi" rel="stylesheet">
+    <link href="site.css" rel="stylesheet">
+    <link href="game.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="#">
+        <p lang="ja">十六武蔵</p>
+        <p>16 Musashi</p>
+      </a>
+      <a href="#history">
+        <p lang="ja">歴史</p>
+        <p>History</p>
+      </a>
+      <a href="#instructions">
+        <p lang="ja">ゲーム説明</p>
+        <p>Instructions</p>
+      </a>
+      <a href="#play">
+        <p lang="ja">遊ぼう</p>
+        <p>Play</p>
+      </a>
+    </nav>
+    <section id="history">
+      <div class="content">
+        <p lang="ja">歴史</p>
+        <h1>History</h1>
+        <p>Sixteen Musashi (<span lang="ja">十六武蔵/十六六指</span>) is a traditional Japanese board game. Traditionally played with Go's (<span lang="ja">囲碁</span>) game pieces (<span lang="ja">碁石</span>) during the Edo period, anything from pebbles to painted square or round paper can be used. It is based on an older game called Yasasugaru (<span lang="ja">八道行成</span>) that was transmitted from China during the Heian era. The use of terms like Ushibeya (<span lang="ja">牛部屋</span>), Umagoya (<span lang="ja">馬小屋</span>), and Secchin (<span lang="ja">雪隠</span>), that were not unlike the terms used by older, similar games across Asia, suggest that the game did not originate from Japan.</p>
+        <p>In the story &ldquo;Arm Wrestling in the Clouds&rdquo;</p>
+        <a class="button yellow" href="#instructions">Learn how to play</a>
+      </div>
+    </section>
+    <section id="instructions">
+      <div class="content">
+        <p lang="ja">ゲーム説明</p>
+        <h2>Instructions</h2>
+        <div class="f2-2">
+          <div>
+            <h3>Setup</h3>
+            <p>16 Musashi is a two-player game played on a 5 by 5 grid connected to an isosceles triangle called a stable (<span lang="ja">牛部屋/馬小屋</span>).</p>
+            <p>One player, called the parent, controls one piece</p>
+          </div>
+          <div>
+            <h3>Win Conditions</h3>
+            <h4>Ten</h4>
+            <p></p>
+            <h4>Musashi</h4>
+            <p></p>
+          </div>
+        </div>
+        <a class="button" href="#play">Play Now</a>
+      </div>
+    </section>
+    <section id="play">
+      <div class="info" id="ko">
+        <div class="content">
+          <p lang="ja">天</p>
+          <h2>Ten</h2>
+          <div class="player-grid">
+            <div class="ko" data-piece="0"></div>
+            <div class="ko" data-piece="1"></div>
+            <div class="ko" data-piece="2"></div>
+            <div class="ko" data-piece="3"></div>
+            <div class="ko" data-piece="4"></div>
+            <div class="ko" data-piece="5"></div>
+            <div class="ko" data-piece="6"></div>
+            <div class="ko" data-piece="7"></div>
+            <div class="ko" data-piece="8"></div>
+            <div class="ko" data-piece="9"></div>
+            <div class="ko" data-piece="10"></div>
+            <div class="ko" data-piece="11"></div>
+            <div class="ko" data-piece="12"></div>
+            <div class="ko" data-piece="13"></div>
+            <div class="ko" data-piece="14"></div>
+            <div class="ko" data-piece="15"></div>
+          </div>
+        </div>
+      </div>
+      <div class="game">
+        <div class="grid board">
+          <div id="g00"></div>
+          <div id="g10"></div>
+          <div id="g20"></div>
+          <div id="g30"></div>
+          <div id="g40"></div>
+          <div id="g01"></div>
+          <div id="g11"></div>
+          <div id="g21"></div>
+          <div id="g31"></div>
+          <div id="g41"></div>
+          <div id="g02"></div>
+          <div id="g12"></div>
+          <div id="g22"></div>
+          <div id="g32"></div>
+          <div id="g42"></div>
+          <div id="g03"></div>
+          <div id="g13"></div>
+          <div id="g23"></div>
+          <div id="g33"></div>
+          <div id="g43"></div>
+          <div id="g04"></div>
+          <div id="g14"></div>
+          <div id="g24"></div>
+          <div id="g34"></div>
+          <div id="g44"></div>
+          <div id="g15"></div>
+          <div id="g25"></div>
+          <div id="g35"></div>
+          <div id="g06"></div>
+          <div id="g16"></div>
+          <div id="g26"></div>
+          <div id="g36"></div>
+          <div id="g46"></div>
+        </div>
+      </div>
+      <div class="info" id="oya">
+        <div class="content">
+          <p lang="ja">武蔵</p>
+          <h2>Musashi</h2>
+          <div class="oya-piece">
+            <div class="oya"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      
+    </footer>
+  </body>
+</html>

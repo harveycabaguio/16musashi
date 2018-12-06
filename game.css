@@ -1,0 +1,122 @@
+#play {
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". . .";
+}
+
+.grid {
+  display: grid;
+  width: 500px;
+  height: 700px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    " a  b  c  d  e  "
+    " f  g  h  i  j  "
+    " k  l  m  n  o  "
+    " p  q  r  s  t  "
+    " u  v  w  x  y  "
+    " .  z  aa bb .  "
+    " cc dd ee ff gg ";
+    
+  background-image: url('16musashibg.png');
+  background-size: 100%;
+}
+.grid > * {
+  border-radius: 50%;
+  transition: all 120ms ease-in-out;
+}
+.grid :nth-child(1) { grid-area: a; }
+.grid :nth-child(2) { grid-area: b; }
+.grid :nth-child(3) { grid-area: c; }
+.grid :nth-child(4) { grid-area: d; }
+.grid :nth-child(5) { grid-area: e; }
+.grid :nth-child(6) { grid-area: f; }
+.grid :nth-child(7) { grid-area: g; }
+.grid :nth-child(8) { grid-area: h; }
+.grid :nth-child(9) { grid-area: i; }
+.grid :nth-child(10) { grid-area: j; }
+.grid :nth-child(11) { grid-area: k; }
+.grid :nth-child(12) { grid-area: l; }
+.grid :nth-child(13) { grid-area: m; }
+.grid :nth-child(14) { grid-area: n; }
+.grid :nth-child(15) { grid-area: o; }
+.grid :nth-child(16) { grid-area: p; }
+.grid :nth-child(17) { grid-area: q; }
+.grid :nth-child(18) { grid-area: r; }
+.grid :nth-child(19) { grid-area: s; }
+.grid :nth-child(20) { grid-area: t; }
+.grid :nth-child(21) { grid-area: u; }
+.grid :nth-child(22) { grid-area: v; }
+.grid :nth-child(23) { grid-area: w; }
+.grid :nth-child(24) { grid-area: x; }
+.grid :nth-child(25) { grid-area: y; }
+.grid :nth-child(26) { grid-area: z; }
+.grid :nth-child(27) { grid-area: aa; }
+.grid :nth-child(28) { grid-area: bb; }
+.grid :nth-child(29) { grid-area: cc; }
+.grid :nth-child(30) { grid-area: dd; }
+.grid :nth-child(31) { grid-area: ee; }
+.grid :nth-child(32) { grid-area: ff; }
+.grid :nth-child(33) { grid-area: gg; }
+
+.ko,
+.oya {
+  position: relative;
+}
+
+.ko:after,
+.oya:after {
+  position: absolute;
+  display: inline-block;
+  
+  border-radius: 50%;
+  content: '';
+}
+.ko:after {
+  top: 24px;
+  left: 24px;
+  width: 48px;
+  height: 48px;
+  
+  background-color: #666;
+  background-size: 100%;
+  border: 2px solid #666;
+}
+.oya:after {
+  top: 12px;
+  left: 12px;
+  width: 72px;
+  height: 72px;
+  
+  background-color: #dc322f;
+  background-image: url('assets/keisatsu.jpg');
+  background-size: 100%;
+  border: 2px solid #dc322f;
+  
+  background-clip: content-box;
+}
+[onclick].ko:hover,
+[onclick].oya:hover,
+.selected,
+.ploppable {
+  background-color: rgba(221, 50, 47, 0.12);
+}
+
+[data-piece="0"].ko:after { background-image: url('assets/ten/1.jpg');}
+[data-piece="1"].ko:after { background-image: url('assets/ten/2.jpg');}
+[data-piece="2"].ko:after { background-image: url('assets/ten/3.jpg');}
+[data-piece="3"].ko:after { background-image: url('assets/ten/4.jpg');}
+[data-piece="4"].ko:after { background-image: url('assets/ten/5.jpg');}
+[data-piece="5"].ko:after { background-image: url('assets/ten/6.jpg');}
+[data-piece="6"].ko:after { background-image: url('assets/ten/7.jpg');}
+[data-piece="7"].ko:after { background-image: url('assets/ten/8.jpg');}
+[data-piece="8"].ko:after { background-image: url('assets/ten/9.jpg');}
+[data-piece="9"].ko:after { background-image: url('assets/ten/10.jpg');}
+[data-piece="10"].ko:after { background-image: url('assets/ten/11.jpg');}
+[data-piece="11"].ko:after { background-image: url('assets/ten/11.jpg');}
+[data-piece="12"].ko:after { background-image: url('assets/ten/12.jpg');}
+[data-piece="13"].ko:after { background-image: url('assets/ten/13.jpg');}
+[data-piece="14"].ko:after { background-image: url('assets/ten/14.jpg');}
+[data-piece="15"].ko:after { background-image: url('assets/ten/15.jpg');}
