@@ -137,3 +137,36 @@
 #oya-turn {
   background-color: #dc322f;
 }
+
+#wonnered-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#wonnered {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 33vw;
+  height: 100vh;
+  
+  color: #fff;
+  border: none;
+}
+#wonnered.ten {
+  left: 0;
+  background-color: #666;
+}
+#wonnered.musashi {
+  right: 0;
+  background-color: #dc322f;
+}
+#wonnered .button {
+  background-color: #fff;
+  color: #000;
+}
