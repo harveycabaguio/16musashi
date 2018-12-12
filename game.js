@@ -179,7 +179,7 @@ function findChild (mode, ogX, ogY) {
       alive++;
     }
   }
-  if (alive < 8) {
+  if (alive < 5) {
     wonnered('musashi');
   }
 }

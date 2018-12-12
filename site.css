@@ -57,6 +57,17 @@ nav a:link:first-child {
   font-weight: bold;
 }
 
+footer {
+  display: flex;
+  padding: 36px;
+  flex-direction: row;
+  
+  background-color: #eee8d5;
+}
+footer > * {
+  flex: 1;
+}
+
 section {
   display: block;
   
@@ -96,11 +107,11 @@ section .content {
   #instructions .content {
     max-width: 100vw;
   }
-section .f2-2 {
+section .f3-2 {
   display: flex;
   flex-direction: row;
 }
-.f2-2 > * {
+.f3-2 > * {
   flex: 1;
   margin-left: 36px;
   margin-right: 36px;
@@ -123,9 +134,12 @@ h3 {
   font-size: 24px;
 }
 h4 {
+  color: #dc322f;
   font-size: 18px;
+  text-align: left;
 }
-section p {
+section p,
+ol {
   margin-bottom: 36px;
   font-family: 'Arvo', sans-serif;
   font-size: 18px;
